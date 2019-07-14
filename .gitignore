@@ -21,3 +21,5 @@ TestResults
 
 target
 BenchmarkDotNet.Artifacts
+coverage.cobertura.xml
+coverage.json

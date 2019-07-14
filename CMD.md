@@ -2,7 +2,8 @@
 
 ```
 dotnet test tests/MyWeb.Tests/MyWeb.Tests.csproj \
-    --logger trx \
     --configuration Release  \
-    /p:CollectCoverage=true
+    --logger trx \
+    /p:CollectCoverage=true \
+    /p:CoverletOutputFormat=cobertura
 ```

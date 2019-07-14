@@ -20,7 +20,12 @@ steps:
   inputs:
     command: test
     projects: '**/*Tests/*.csproj'
-    arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
+    arguments: '--configuration $(buildConfiguration)  --logger trx  /p:CollectCoverage=true'
+
+- task: PublishTestResults@2
+  inputs:
+    testRunner: VSTest
+    testResultsFiles: '**/*.trx'
 
 # - script: ~/.dotnet/tools/dotnet-cake -target=Pack
 #   displayName: 'Build with Cake'
