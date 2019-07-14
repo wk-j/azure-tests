@@ -18,6 +18,7 @@ publish
 .publish
 
 TestResults
+/Report
 
 target
 BenchmarkDotNet.Artifacts
