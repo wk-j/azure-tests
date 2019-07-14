@@ -1,0 +1,110 @@
+{
+  "MyWeb.dll": {
+    "/Users/wk/Source/AzureTests/src/MyWeb/Program.cs": {
+      "MyWeb.Program": {
+        "System.Void MyWeb.Program::Main(System.String[])": {
+          "Lines": {
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Hosting.IWebHostBuilder MyWeb.Program::CreateWebHostBuilder(System.String[])": {
+          "Lines": {
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/wk/Source/AzureTests/src/MyWeb/Startup.cs": {
+      "MyWeb.Startup": {
+        "Microsoft.Extensions.Configuration.IConfiguration MyWeb.Startup::get_Configuration()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.Void MyWeb.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "28": 0,
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.Void MyWeb.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)": {
+          "Lines": {
+            "34": 0,
+            "36": 0,
+            "37": 0,
+            "41": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0
+          },
+          "Branches": [
+            {
+              "Line": 34,
+              "Offset": 6,
+              "EndOffset": 8,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 34,
+              "Offset": 6,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void MyWeb.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "18": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/wk/Source/AzureTests/src/MyWeb/Controllers/ValuesController.cs": {
+      "MyWeb.Controllers.ValuesController": {
+        "Microsoft.AspNetCore.Mvc.ActionResult`1<System.Collections.Generic.IEnumerable`1<System.String>> MyWeb.Controllers.ValuesController::Get()": {
+          "Lines": {
+            "17": 1
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.ActionResult`1<System.String> MyWeb.Controllers.ValuesController::Get(System.Int32)": {
+          "Lines": {
+            "24": 0
+          },
+          "Branches": []
+        },
+        "System.Void MyWeb.Controllers.ValuesController::Post(System.String)": {
+          "Lines": {
+            "31": 0
+          },
+          "Branches": []
+        },
+        "System.Void MyWeb.Controllers.ValuesController::Put(System.Int32,System.String)": {
+          "Lines": {
+            "37": 0
+          },
+          "Branches": []
+        },
+        "System.Void MyWeb.Controllers.ValuesController::Delete(System.Int32)": {
+          "Lines": {
+            "43": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

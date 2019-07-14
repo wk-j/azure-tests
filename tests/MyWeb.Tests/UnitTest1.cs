@@ -1,4 +1,5 @@
 using System;
+using MyWeb.Controllers;
 using Xunit;
 
 namespace MyWeb.Tests
@@ -8,7 +9,8 @@ namespace MyWeb.Tests
         [Fact]
         public void Test1()
         {
-
+            var controller = new ValuesController();
+            var values = controller.Get();
         }
     }
 }
