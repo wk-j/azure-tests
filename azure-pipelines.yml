@@ -22,6 +22,10 @@ steps:
     projects: '**/*Tests/*.csproj'
     arguments: '--configuration $(buildConfiguration)  --logger trx  /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
 
+- script: |
+    dotnet test tests/MyWeb.Tests/MyWeb.Tests.csproj --configuration Release  --logger trx /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
+  displayName: Test
+
 - task: PublishTestResults@2
   inputs:
     testRunner: VSTest
@@ -29,7 +33,7 @@ steps:
 
 - script: |
     dotnet tool install -g dotnet-reportgenerator-globaltool
-     ~/.dotnet/tools/reportgenerator -reports:$(Build.SourcesDirectory)/tests/**/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/CodeCoverage -reporttypes:HtmlInline_AzurePipelines;Cobertura
+     ~/.dotnet/tools/reportgenerator -reports:"./tests/**/coverage.cobertura.xml" -targetdir:./CodeCoverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
   displayName: Create Code coverage report
 
 
